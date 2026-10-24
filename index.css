@@ -1,0 +1,28 @@
+<style data-purpose="custom-utilities">
+      /* Custom button styling matching wireframe appearance and crisp hover transitions */
+      .btn-primary {
+        display: inline-block;
+        background-color: #0284c7;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 0.625rem 1.5rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #0369a1;
+      }
+
+      .btn-primary:active {
+        transform: scale(0.98);
+      }
+
+      /* Rounded card framing matching wireframe */
+      .wireframe-box {
+        border: 1.5px solid #1e293b;
+        border-radius: 1.5rem;
+      }
+    </style>

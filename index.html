@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ella - Full Stack Software Engineer</title>
+
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- Load Tailwind CSS v3 with plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!--  External CSS -->
+    <link rel = "stylesheet" type="text/css" href="./index.css">
+  </head>
+  <body class="bg-white text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+    <!-- BEGIN: MainHeader -->
+    <!-- Dark charcoal top navigation bar matching the wireframe -->
+    <header class="bg-[#1e293b] text-white w-full sticky top-0 z-50 shadow-md">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <!-- EDIT: NAVBAR_BRAND -->
+        <a class="text-xl font-bold tracking-tight text-white hover:text-slate-200 transition-colors" href="#">FCBPortfolio</a>
+        <!-- Primary Navigation Links with arrow indicator -->
+        <nav class="flex items-center space-x-6 sm:space-x-8 text-sm font-medium text-slate-300">
+          <a class="hover:text-white transition-colors" href="#about">About</a>
+          <a class="hover:text-white transition-colors" href="#projects">Projects</a>
+          <a class="hover:text-white transition-colors" href="#skills">Skills</a>
+          <a class="hover:text-white transition-colors flex items-center gap-1 font-semibold text-white" href="#contact">
+            <span>Contact</span>
+            <svg class="w-4 h-4 ml-0.5 inline-block" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+              <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <!-- END: MainHeader -->
+    <!-- BEGIN: MainContent -->
+    <main class="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 py-12 space-y-20">
+      <!-- BEGIN: HeroSection -->
+      <section class="pt-4" id="hero">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-8 lg:gap-12">
+          <!-- Profile Picture Container -->
+          <div class="w-44 h-44 sm:w-48 sm:h-48 flex-shrink-0 border border-slate-300 rounded-lg overflow-hidden bg-slate-50 p-2 shadow-sm">
+            <img alt="Profile Avatar" class="w-full h-full object-cover rounded" src="./profile.jpg" />
+          </div>
+          <!-- Hero Content / Introduction -->
+          <div class="flex-1 text-center md:text-left space-y-3">
+            <!-- EDIT: NAME_HEADING -->
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Ella Grace V. Lopez</h1>
+            <!-- EDIT: JOB_TITLE -->
+            <h2 class="text-lg font-semibold text-slate-700">Full-stack Software Engineer</h2>
+            <!-- EDIT: SHORT_INTRODUCTION -->
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base pt-1"> Explore a full-stack software engineer portfolio featuring web application development, APIs, databases, cloud technologies, scalable architecture, and user-focused solutions. </p>
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
+              <a class="btn-primary" href="#projects">View My Projects</a>
+              <a class="btn-primary" href="#contact">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: HeroSection -->
+      <!-- BEGIN: AboutSection -->
+      <section class="text-center space-y-6" id="about">
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">About</h2>
+        <!-- Single card/box with wireframe styling -->
+        <div class="wireframe-box p-8 sm:p-12 min-h-[140px] flex items-center justify-center bg-white shadow-sm">
+          <!-- EDIT: ABOUT_YOU -->
+          <p class="text-slate-700 leading-relaxed max-w-3xl text-center">As a full-stack software engineer, I design and build reliable web applications across the frontend and backend. I work with modern programming languages, frameworks, databases, APIs, and cloud technologies to create responsive, secure, and maintainable software. My interests include scalable architecture, user-centered design, performance optimization, and efficient development workflows. I help businesses turn ideas into practical digital products that improve operations, engage users, and support long-term growth.</p>
+        </div>
+      </section>
+      <!-- END: AboutSection -->
+      <!-- BEGIN: ProjectsSection -->
+      <section class="text-center space-y-8" id="projects">
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Projects</h2>
+        <!-- 3-Column Responsive Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-left">
+          <!-- Project Card 1 -->
+          <div class="border border-slate-300 rounded-lg overflow-hidden bg-white shadow-sm flex flex-col justify-between">
+            <div>
+              <img alt="Project preview image" class="w-full h-[200px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPSeSFLDnqUu0_v-61Nd14wavP2g9ksij8w6gmMul9KZEenRQgyuPuO8cbYS5xOsB4uC5TWOSWL0QpprEhmAwl__ufksHl0-AYulGskIl4s9hnw0qxfzqpcHsx6jH7ifGAhzqDmWHf_jyYngzWJ-M7qjwakgQlNUFwDIpIPEalHfVi5vXW5541JHpYEVHbXA7jhUXQZICF8smFjaASPxoCAFKD6Mbaaqy3a4RgxxS-Btp9q9Mc1VxshA" />
+              <div class="p-5 space-y-3">
+                <h3 class="text-xl font-bold text-slate-900">Card title</h3>
+                <p class="text-sm text-slate-600 leading-normal"> Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a class="btn-primary text-sm py-2 px-4 inline-block" href="#">Go somewhere</a>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="border border-slate-300 rounded-lg overflow-hidden bg-white shadow-sm flex flex-col justify-between">
+            <div>
+              <img alt="Project preview image" class="w-full h-[200px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyaCiPQZ0OGefe8VuUq-ryExETbHLQOiS8LB9nnDCeFuAkuDTiCoZi4xsCcgaExF_nNevZMcgteAA1rBp5G4GUZ6uNwPgBwqCU03qLJEr4CM0vaKzo-IxSFvVn4zei69tgFeXSZQmIGRkiP9FHsVifJcjxG0B8JPODyo5kl5lqgrB7GLAjCLAjx8nzVBuPnAFxfdZ01Tl5_vqtFUIBCO6nGGb7ayyyx7sQavP1u1-L_oCLCZ4E74V-lA" />
+              <div class="p-5 space-y-3">
+                <h3 class="text-xl font-bold text-slate-900">Card title</h3>
+                <p class="text-sm text-slate-600 leading-normal"> Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a class="btn-primary text-sm py-2 px-4 inline-block" href="#">Go somewhere</a>
+            </div>
+          </div>
+          <!-- Project Card 3 -->
+          <div class="border border-slate-300 rounded-lg overflow-hidden bg-white shadow-sm flex flex-col justify-between">
+            <div>
+              <img alt="Project preview image" class="w-full h-[200px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1E1a2bTd6lhjLOBtOOk258LpqDGckXemv6Xq7EaGcApZnpwJQG4ww11XqBpTDAaX26ZBG9PMha55ZKRVWW_7G74EWu6vTvxove1QFMCG6mPtAGi1lfGGnHj4ro-WOicn7ROydooRUliyI--krhWPEpNvBmP0LnF2cf_uI19Bb6xklmq9XRM4w0mW1yNdbFaqPL-tTpZrEVM0aLEAznDNfTFFt--M9z595zNL6QHPwG9PD7YC_SfisLQ" />
+              <div class="p-5 space-y-3">
+                <h3 class="text-xl font-bold text-slate-900">Card title</h3>
+                <p class="text-sm text-slate-600 leading-normal"> Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a class="btn-primary text-sm py-2 px-4 inline-block" href="#">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: ProjectsSection -->
+      <!-- BEGIN: SkillsAndToolsSection -->
+      <section class="text-center space-y-8" id="skills">
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Programming Languages and Tools</h2>
+        <!-- 2-Column Responsive Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          <!-- Card 1: Skills -->
+          <div class="wireframe-box p-8 flex flex-col items-center justify-center bg-white shadow-sm min-h-[160px]">
+            <h3 class="text-xl font-bold text-slate-900 mb-4">Programming Languages</h3>
+            <ul class="text-slate-600 space-y-2 text-center text-sm sm:text-base">
+              <li>C++</li>
+              <li>Python</li>
+              <li>HTML</li>
+              <li>Java</li>
+            </ul>
+          </div>
+          <!-- Card 2: Tools -->
+          <div class="wireframe-box p-8 flex flex-col items-center justify-center bg-white shadow-sm min-h-[160px]">
+            <h3 class="text-xl font-bold text-slate-900 mb-4">Tools</h3>
+            <ul class="text-slate-600 space-y-2 text-center text-sm sm:text-base">
+              <li>Sublime</li>
+              <li>Git</li>
+              <li>Postman</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- END: SkillsAndToolsSection -->
+      <!-- BEGIN: ContactSection -->
+      <section class="text-center space-y-8" id="contact">
+        <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Contact</h2>
+        <!-- Single rounded contact container -->
+        <div class="wireframe-box p-8 sm:p-12 flex flex-col items-center justify-center bg-white shadow-sm min-h-[160px] space-y-2">
+          <!-- EDIT: CONTACT_INFO -->
+          <p class="text-lg font-bold text-slate-900">Contact Info</p>
+          <p class="text-slate-700 font-medium">0123456789</p>
+          <p class="text-slate-600">ellagrace.lopez15@gmail.com</p>
+          <a class="text-sky-600 hover:text-sky-700 underline font-medium" href="#">https://paraverse.feutech.edu.ph/briefcase/profile/727113202T</a>
+        </div>
+      </section>
+      <!-- END: ContactSection -->
+    </main>
+    <!-- END: MainContent -->
+    <!-- BEGIN: MainFooter -->
+    <!-- Enclosed bottom container strictly matching wireframe box structure -->
+    <footer class="w-full max-w-5xl mx-auto px-4 sm:px-6 mb-6">
+      <div class="border-2 border-slate-900 p-4 text-center rounded-none bg-white">
+        <p class="font-bold text-slate-900 tracking-wide">Footer</p>
+      </div>
+    </footer>
+    <!-- END: MainFooter -->
+  </body>
+</html>
